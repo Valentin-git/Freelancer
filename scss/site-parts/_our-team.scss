@@ -1,0 +1,51 @@
+.our-team-block {
+  padding-top: 37px;
+  padding-bottom: 30px;
+  &__title {
+    font-size: 32px;
+  }
+  &__text {
+    margin-bottom: 43px;
+  }
+  &__link {
+    display: flex;
+    justify-content: flex-end;
+    &::before {
+      content: "";
+      left: 0;
+      left: 955px;
+    }
+  }
+}
+.team {
+  display: flex;
+  padding-bottom: 50px;
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+  &__picture {
+    img {
+      min-width: 120px;
+    }
+  }
+  &__content {
+  }
+  &__name {
+    color: $titleColor;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__job-title {
+    color: $accentColor;
+    padding-bottom: 8px;
+
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+  }
+  &_text {
+  }
+}

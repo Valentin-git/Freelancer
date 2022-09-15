@@ -1,0 +1,150 @@
+@use 'sass:math';
+@import 'common/fonts';
+@import 'common/icons';
+@import 'common/reset';
+@import 'common/variable';
+@import 'common/mixins';
+
+body {
+  font-size: rem(14);
+  // color: $textColor;
+  font-family: $fontFamily;
+}
+button {
+  border: 0;
+  cursor: pointer;
+}
+fieldset {
+  border: 0;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; // прижать футер
+}
+.page {
+  flex: 1 1 auto;
+}
+[class*="container"] {
+  max-width: $maxWidthContainer; 
+  margin: 0 auto;
+  padding: 0 $containerPadding;
+}
+@media (max-width: 1199.98px) {
+  [class*="container"] {
+    max-width: 970px;
+  }
+}
+@media (max-width: $tablet) {
+  [class*="container"] {
+    max-width: 750px;
+  }
+}
+@media (max-width: $mobile) {
+  [class*="container"] {
+    max-width: none;
+  }
+}
+.title {
+  color: $titleColor;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.text {
+  color: $text2Color;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+.link {
+  display: block;
+  color: $accentColor;
+  position: relative;
+
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  &:hover {
+    text-decoration: underline;
+  }
+  &::before {
+    content: "";
+    background-image: url(../img/portfolio/arrow.png);
+    width: 12px;
+    height: 10px;
+   
+    position: absolute;
+    top: 50%;
+    left: 57px;
+    transform: translate(-50%, -50%);
+  }
+}
+.social {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  column-gap: 25px;
+  margin-left: 25px;
+  &__item {
+  }
+  &__link {
+  }
+  &__icon {
+    &::before {
+      color: #b9c0c6;
+      font-size: 20px;
+    }
+    &:hover::before {
+      color: $accentColor;
+    }
+  }
+  .icon-active {
+    &::before {
+      color: $accentColor;
+      
+    }
+    &:hover::before {
+      color: #d27a7f;
+    }
+  }
+
+}
+// .title {
+//   position: relative;
+//   font-size: 50px;
+//   font-weight: 700;
+// }
+// .text {
+//   padding-top: 40px;
+//   padding-bottom: 65px;
+//   font-size: 17px;
+//   font-weight: 400;
+// }
+// .btn {
+//   display: flex;
+//   .link {
+//     background: $accentColor;
+//     color: $whiteColor;
+//     padding: 12px 22px;
+
+//     font-size: 17px;
+//     font-weight: 400;
+//   }
+// }
+// .com-btn {
+  
+// }
+
+
+
+
+@import 'site-parts/header';
+@import 'site-parts/intro';
+@import 'site-parts/snippets';
+@import 'site-parts/portfolio';
+@import 'site-parts/our-team';
+
+@import 'site-parts/footer';
+@import 'site-parts/media';

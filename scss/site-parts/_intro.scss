@@ -1,0 +1,52 @@
+.intro {
+  background-image: url(../img/header/bg.jpg);
+  // background-position: center;
+  background-size: cover;
+  min-height: 1360px;
+  position: relative;
+  // &::before {
+  //   content: "";
+
+  // }
+}
+.slogan {
+  padding-top: 380px;
+  width: 65%;
+  &__title {
+    color: $titleColor;
+    // font-size: 48px;
+    @include adaptiv(48, 27);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.03;
+    span {
+      color: $accentColor;
+    }
+  }
+  &__text {
+    color: $titleColor;
+    margin-top: 11px;
+    margin-bottom: 39px;
+
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+.slogan-btn {
+  display: flex;
+  &__button {
+    color: $whiteColor;
+    background-color: $accentColor;
+    padding: 20px 41px;
+
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    border-radius: 5px;
+    &:hover {
+      background-color: #d27a7f;
+    }
+  }
+}
