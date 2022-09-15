@@ -65,7 +65,8 @@
       position: absolute;
       width: 100%;
       height: rem(3);
-      background: $whiteColor;
+      background-color: $titleColor;
+      border-radius: rem(5);
     } 
     &::before {
       top: 0;
