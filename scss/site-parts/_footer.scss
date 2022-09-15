@@ -1,20 +1,15 @@
 .footer {
-  padding-top: 30px;
+  padding-top: rem(30);
   &__inner {
-    padding: 30px 0;
+    padding: rem(30) 0;
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid #e6eaed;
+    border-top: rem(1) solid #e6eaed;
   }
 }
 .copyrights {
   color: #b9c0c6;
-  font-size: 13px;
+  font-size: rem(13);
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
 }
-// ._icon-google-plus {
-//   &::before {
-//     font-size: 25px;
-//   }
-// }

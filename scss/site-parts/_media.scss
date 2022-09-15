@@ -27,11 +27,11 @@
 //------------------------------- MAX-WIDTH 990.98 tablets ----------//
 @media (max-width: $tablet) {
   .intro {
-    min-height: 935px;
+    min-height: rem(935);
   }
   .team {
     justify-content: center;
-    row-gap: 40px;
+    row-gap: rem(40);
     flex-wrap: wrap;
     &__item {
       width: calc(100% / 2);
@@ -91,16 +91,16 @@
     }
   }
   .intro {
-    min-height: 700px;
+    min-height: rem(700);
   }
   .slogan {
-    padding-top: 220px;
+    padding-top: rem(220);
   }
   .menu-nav {
     display: none;
   }
   .snippets-block {
-    padding-bottom: 50px;
+    padding-bottom: rem(50);
   }
   .portfolio {
     flex-wrap: wrap;
@@ -113,16 +113,38 @@
       width: 100%;
     }
   }
+  .open {
+    display: flex;
+    flex-direction: column;
+    background-color: #b9c0c6;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    .menu__link{
+      color: $whiteColor;
+      font-size: rem(35);
+    }
+    .menu {
+      flex-direction: column;
+    }
+    .social {
+      display: none;
+    }
+  }
 }
 @media (max-width: 646px) {
   .snippets {
-    gap: 30px;
+    gap: rem(30);
   }
 }
 //------------------------------- MAX-WIDTH 575.98 portrait phones ---------------------//
 @media (max-width: 575.98px) {
   .intro {
-    min-height: 565px;
+    min-height: rem(565);
   }
   .slogan {
     width: 100%;
@@ -136,7 +158,7 @@
   .footer {
     &__inner {
       flex-wrap: wrap;
-      row-gap: 20px;
+      row-gap: rem(20);
       flex-direction: column;
       align-items: center;
     }

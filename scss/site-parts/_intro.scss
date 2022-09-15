@@ -1,8 +1,7 @@
 .intro {
   background-image: url(../img/header/bg.jpg);
-  // background-position: center;
   background-size: cover;
-  min-height: 1360px;
+  min-height: rem(1360);
   position: relative;
   // &::before {
   //   content: "";
@@ -10,11 +9,10 @@
   // }
 }
 .slogan {
-  padding-top: 380px;
+  padding-top: rem(380);
   width: 65%;
   &__title {
     color: $titleColor;
-    // font-size: 48px;
     @include adaptiv(48, 27);
     font-weight: 700;
     text-transform: uppercase;
@@ -25,10 +23,10 @@
   }
   &__text {
     color: $titleColor;
-    margin-top: 11px;
-    margin-bottom: 39px;
+    margin-top: rem(11);
+    margin-bottom: rem(39);
 
-    font-size: 20px;
+    font-size: rem(20);
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
   }
@@ -38,15 +36,19 @@
   &__button {
     color: $whiteColor;
     background-color: $accentColor;
-    padding: 20px 41px;
+    padding: rem(20) rem(41);
 
-    font-size: 15px;
+    font-size: rem(15);
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: rem(5);
+    transition: 
+      background-color .3s,
+      transform .3s;
     &:hover {
       background-color: #d27a7f;
+      transform: scale(102%);
     }
   }
 }

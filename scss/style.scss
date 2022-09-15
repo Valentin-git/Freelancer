@@ -7,7 +7,6 @@
 
 body {
   font-size: rem(14);
-  // color: $textColor;
   font-family: $fontFamily;
 }
 button {
@@ -48,13 +47,13 @@ fieldset {
 }
 .title {
   color: $titleColor;
-  font-size: 40px;
+  font-size: rem(40);
   font-weight: 700;
   text-transform: uppercase;
 }
 .text {
   color: $text2Color;
-  font-size: 15px;
+  font-size: rem(15);
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
 }
@@ -63,7 +62,7 @@ fieldset {
   color: $accentColor;
   position: relative;
 
-  font-size: 14px;
+  font-size: rem(14);
   font-weight: 400;
   text-transform: uppercase;
   &:hover {
@@ -72,12 +71,12 @@ fieldset {
   &::before {
     content: "";
     background-image: url(../img/portfolio/arrow.png);
-    width: 12px;
-    height: 10px;
+    width: rem(12);
+    height: rem(10);
    
     position: absolute;
     top: 50%;
-    left: 57px;
+    left: rem(57);
     transform: translate(-50%, -50%);
   }
 }
@@ -85,8 +84,8 @@ fieldset {
   display: flex;
   align-content: center;
   flex-wrap: wrap;
-  column-gap: 25px;
-  margin-left: 25px;
+  column-gap: rem(25);
+  margin-left: rem(25);
   &__item {
   }
   &__link {
@@ -94,7 +93,8 @@ fieldset {
   &__icon {
     &::before {
       color: #b9c0c6;
-      font-size: 20px;
+      font-size: rem(20);
+      transition: color .3s;
     }
     &:hover::before {
       color: $accentColor;
@@ -103,7 +103,7 @@ fieldset {
   .icon-active {
     &::before {
       color: $accentColor;
-      
+      transition: color .3s;
     }
     &:hover::before {
       color: #d27a7f;
@@ -111,34 +111,6 @@ fieldset {
   }
 
 }
-// .title {
-//   position: relative;
-//   font-size: 50px;
-//   font-weight: 700;
-// }
-// .text {
-//   padding-top: 40px;
-//   padding-bottom: 65px;
-//   font-size: 17px;
-//   font-weight: 400;
-// }
-// .btn {
-//   display: flex;
-//   .link {
-//     background: $accentColor;
-//     color: $whiteColor;
-//     padding: 12px 22px;
-
-//     font-size: 17px;
-//     font-weight: 400;
-//   }
-// }
-// .com-btn {
-  
-// }
-
-
-
 
 @import 'site-parts/header';
 @import 'site-parts/intro';

@@ -1,11 +1,11 @@
 .our-team-block {
-  padding-top: 37px;
-  padding-bottom: 30px;
+  padding-top: rem(37);
+  padding-bottom: rem(30);
   &__title {
-    font-size: 32px;
+    font-size: rem(32);
   }
   &__text {
-    margin-bottom: 43px;
+    margin-bottom: rem(43);
   }
   &__link {
     display: flex;
@@ -13,39 +13,37 @@
     &::before {
       content: "";
       left: 0;
-      left: 955px;
+      left: rem(955);
     }
   }
 }
 .team {
   display: flex;
-  padding-bottom: 50px;
+  padding-bottom: rem(50);
   &__item {
     display: flex;
     align-items: center;
-    gap: 22px;
+    gap: rem(22);
   }
   &__picture {
     img {
-      min-width: 120px;
+      min-width: rem(120);
     }
   }
   &__content {
   }
   &__name {
     color: $titleColor;
-    font-size: 22px;
+    font-size: rem(22);
     font-weight: 700;
     text-transform: uppercase;
   }
   &__job-title {
     color: $accentColor;
-    padding-bottom: 8px;
+    padding-bottom: rem(8);
 
-    font-size: 14px;
+    font-size: rem(14);
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
-  }
-  &_text {
   }
 }

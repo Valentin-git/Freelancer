@@ -122,14 +122,14 @@ fieldset {
 
 .title {
   color: #314a5b;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .text {
   color: #9aa0ab;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
 }
@@ -138,7 +138,7 @@ fieldset {
   display: block;
   color: #fa5c65;
   position: relative;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -150,11 +150,11 @@ fieldset {
 .link::before {
   content: "";
   background-image: url(../img/portfolio/arrow.png);
-  width: 12px;
-  height: 10px;
+  width: 0.75rem;
+  height: 0.625rem;
   position: absolute;
   top: 50%;
-  left: 57px;
+  left: 3.5625rem;
   transform: translate(-50%, -50%);
 }
 
@@ -162,13 +162,14 @@ fieldset {
   display: flex;
   align-content: center;
   flex-wrap: wrap;
-  column-gap: 25px;
-  margin-left: 25px;
+  column-gap: 1.5625rem;
+  margin-left: 1.5625rem;
 }
 
 .social__icon::before {
   color: #b9c0c6;
-  font-size: 20px;
+  font-size: 1.25rem;
+  transition: color .3s;
 }
 
 .social__icon:hover::before {
@@ -177,6 +178,7 @@ fieldset {
 
 .social .icon-active::before {
   color: #fa5c65;
+  transition: color .3s;
 }
 
 .social .icon-active:hover::before {
@@ -204,16 +206,17 @@ fieldset {
 
 .logo__link {
   background: #fa5c65;
-  height: 72px;
+  height: 4.5rem;
   display: flex;
   align-items: flex-end;
-  padding: 15px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  padding: 0.9375rem;
+  border-bottom-right-radius: 0.625rem;
+  border-bottom-left-radius: 0.625rem;
   color: white;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   font-family: 'Domine', serif;
+  transition: background-color .3s;
 }
 
 .logo__link span {
@@ -231,12 +234,12 @@ fieldset {
 .menu {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 40px;
+  column-gap: 2.5rem;
 }
 
 .menu__link {
   color: #263742;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -249,12 +252,12 @@ fieldset {
 .intro {
   background-image: url(../img/header/bg.jpg);
   background-size: cover;
-  min-height: 1360px;
+  min-height: 85rem;
   position: relative;
 }
 
 .slogan {
-  padding-top: 380px;
+  padding-top: 23.75rem;
   width: 65%;
 }
 
@@ -283,9 +286,9 @@ fieldset {
 
 .slogan__text {
   color: #314a5b;
-  margin-top: 11px;
-  margin-bottom: 39px;
-  font-size: 20px;
+  margin-top: 0.6875rem;
+  margin-bottom: 2.4375rem;
+  font-size: 1.25rem;
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
 }
@@ -297,26 +300,28 @@ fieldset {
 .slogan-btn__button {
   color: white;
   background-color: #fa5c65;
-  padding: 20px 41px;
-  font-size: 15px;
+  padding: 1.25rem 2.5625rem;
+  font-size: 0.9375rem;
   font-weight: 700;
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
+  transition: background-color .3s, transform .3s;
 }
 
 .slogan-btn__button:hover {
   background-color: #d27a7f;
+  transform: scale(102%);
 }
 
 .snippets-block {
-  padding-top: 80px;
-  padding-bottom: 100px;
+  padding-top: 5rem;
+  padding-bottom: 6.25rem;
 }
 
 .snippets {
   display: flex;
-  gap: 60px;
+  gap: 3.75rem;
 }
 
 .snippets__item {
@@ -327,7 +332,7 @@ fieldset {
 .snippets__title {
   color: #465065;
   width: 50%;
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1;
@@ -342,8 +347,8 @@ fieldset {
 }
 
 .snippets__text {
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding-top: 0.9375rem;
+  padding-bottom: 1.25rem;
   margin-top: auto;
 }
 
@@ -358,27 +363,27 @@ fieldset {
 
 .portfolio__subtitle {
   color: #314a5b;
-  padding-bottom: 21px;
-  font-size: 16px;
+  padding-bottom: 1.3125rem;
+  font-size: 1rem;
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
 }
 
 .portfolio__link {
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 .our-team-block {
-  padding-top: 37px;
-  padding-bottom: 30px;
+  padding-top: 2.3125rem;
+  padding-bottom: 1.875rem;
 }
 
 .our-team-block__title {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .our-team-block__text {
-  margin-bottom: 43px;
+  margin-bottom: 2.6875rem;
 }
 
 .our-team-block__link {
@@ -389,53 +394,53 @@ fieldset {
 .our-team-block__link::before {
   content: "";
   left: 0;
-  left: 955px;
+  left: 59.6875rem;
 }
 
 .team {
   display: flex;
-  padding-bottom: 50px;
+  padding-bottom: 3.125rem;
 }
 
 .team__item {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 1.375rem;
 }
 
 .team__picture img {
-  min-width: 120px;
+  min-width: 7.5rem;
 }
 
 .team__name {
   color: #314a5b;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .team__job-title {
   color: #fa5c65;
-  padding-bottom: 8px;
-  font-size: 14px;
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
 }
 
 .footer {
-  padding-top: 30px;
+  padding-top: 1.875rem;
 }
 
 .footer__inner {
-  padding: 30px 0;
+  padding: 1.875rem 0;
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid #e6eaed;
+  border-top: 0.0625rem solid #e6eaed;
 }
 
 .copyrights {
   color: #b9c0c6;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
 }
@@ -448,11 +453,11 @@ fieldset {
 
 @media (max-width: 991.98px) {
   .intro {
-    min-height: 935px;
+    min-height: 58.4375rem;
   }
   .team {
     justify-content: center;
-    row-gap: 40px;
+    row-gap: 2.5rem;
     flex-wrap: wrap;
   }
   .team__item {
@@ -500,16 +505,16 @@ fieldset {
     bottom: calc(50% - 1px);
   }
   .intro {
-    min-height: 700px;
+    min-height: 43.75rem;
   }
   .slogan {
-    padding-top: 220px;
+    padding-top: 13.75rem;
   }
   .menu-nav {
     display: none;
   }
   .snippets-block {
-    padding-bottom: 50px;
+    padding-bottom: 3.125rem;
   }
   .portfolio {
     flex-wrap: wrap;
@@ -520,17 +525,39 @@ fieldset {
   .team__item {
     width: 100%;
   }
+  .open {
+    display: flex;
+    flex-direction: column;
+    background-color: #b9c0c6;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .open .menu__link {
+    color: white;
+    font-size: 2.1875rem;
+  }
+  .open .menu {
+    flex-direction: column;
+  }
+  .open .social {
+    display: none;
+  }
 }
 
 @media (max-width: 646px) {
   .snippets {
-    gap: 30px;
+    gap: 1.875rem;
   }
 }
 
 @media (max-width: 575.98px) {
   .intro {
-    min-height: 565px;
+    min-height: 35.3125rem;
   }
   .slogan {
     width: 100%;
@@ -543,7 +570,7 @@ fieldset {
   }
   .footer__inner {
     flex-wrap: wrap;
-    row-gap: 20px;
+    row-gap: 1.25rem;
     flex-direction: column;
     align-items: center;
   }
