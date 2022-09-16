@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Freelancer</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="icon" href="img/header/favicon.ico">
 </head>
 <body>
@@ -56,9 +57,9 @@
       <section class="intro">
         <div class="container">
           <div class="slogan">
-            <h1 class="slogan__title">intelligence is nothing without ambition<span>.</span></h1>
-            <p class="slogan__text">We’re small but impressive creative agency.</p>
-            <div class="slogan-btn">
+            <h1 class="slogan__title wow fadeInUp">intelligence is nothing without ambition<span>.</span></h1>
+            <p class="slogan__text wow fadeInUp">We’re small but impressive creative agency.</p>
+            <div class="slogan-btn wow fadeInUp">
               <a href="#" class="slogan-btn__button">READ MORE</a>
             </div>
           </div>
@@ -67,21 +68,21 @@
       <section class="snippets-block">
         <div class="container">
           <div class="snippets">
-            <div class="snippets__item">
+            <div class="snippets__item wow fadeInLeft">
               <h2 class="snippets__title">Peace of Mind<span>.</span></h2>
               <p class="snippets__text text">
                 You’re safe with us. The privacy and security of your financial information is our top priority.
               </p>
               <a href="#" class="snippets__link link">More</a>
             </div>
-            <div class="snippets__item">
+            <div class="snippets__item wow fadeInDown">
               <h2 class="snippets__title snippets__title_wd">Free<span>.</span> Actually free</h2>
               <p class="snippets__text text">
                 No more pricing grids. No more fine print. Sending and receiving cash is free without gimmicks.
               </p>
               <a href="#" class="snippets__link link">More</a>
             </div>
-            <div class="snippets__item">
+            <div class="snippets__item wow fadeInRight">
               <h2 class="snippets__title">Simple payments<span>.</span></h2>
               <p class="snippets__text text">
                 The same debit card you use to buy coffee lets deposit money straight to your bank account.
@@ -94,10 +95,10 @@
       <section class="portfolio-block">
         <div class="container">
           <div class="portfolio">
-            <div class="portfolio__item">
+            <div class="portfolio__item wow bounceInLeft" data-wow-duration="2s">
               <img src="./img/portfolio/macbook.jpg" alt="macbook">
             </div>
-            <div class="portfolio__item">
+            <div class="portfolio__item wow bounceInRight" data-wow-duration="2s">
               <h2 class="portfolio__title title">Portfolio</h2>
               <h4 class="portfolio__subtitle">We are small, but strong team</h4>
               <p class="portfolio__text text">
@@ -116,7 +117,7 @@
           <h2 class="our-team-block__title title">Our team</h2>
           <p class="our-team-block__text text">They are big but still friendly.</p>
           <div class="team">
-            <div class="team__item">
+            <div class="team__item wow bounceInUp" data-wow-duration="2s">
               <div class="team__picture">
                 <img src="./img/our-team/joey.png" alt="Joey">
               </div>
@@ -126,7 +127,7 @@
                 <p class="team__text text">Coffee lover.  Always on bike. iPhone fan.</p>
               </div>
             </div>
-            <div class="team__item">
+            <div class="team__item wow bounceInUp" data-wow-duration="2s">
               <div class="team__picture">
                 <img src="./img/our-team/matt.png" alt="Matt">
               </div>
@@ -136,7 +137,7 @@
                 <p class="team__text text">MTB Biker. Photoshop Master. Loving Father.</p>
               </div>
             </div>
-            <div class="team__item">
+            <div class="team__item wow bounceInUp" data-wow-duration="2s">
               <div class="team__picture">
                 <img src="./img/our-team/mike.png" alt="Mike">
               </div>
@@ -180,6 +181,10 @@
   <!-- <script src="./js/slick.min.js"></script> -->
   <!-- <script src="./js/main-slick.js"></script> -->
   <script src="./js/main-burger.js"></script> 
+  <script src="./js/wow.min.js"></script> 
+  <script>
+      new WOW().init();
+  </script>
   <!-- <script src="./js/main.js"></script> -->
   <!-- <script src="./js/main-counter.js"></script> -->
   <!-- <script src="./js/main-filter.js"></script> -->
